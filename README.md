@@ -8,7 +8,7 @@ This is a copy of DSView, where I have modified the size of the real-time memory
 
 <img width="1068" alt="image" src="https://github.com/cumtliang/DSView-Unlock/assets/14148856/5ed46584-dd28-4243-842c-55c876870582">
 
-<img width="1165" alt="image" src="https://github.com/cumtliang/DSView-Unlock/assets/14148856/4dee9775-6a47-4564-bbb2-4b3dabea96e9">
+
 
 
 DSView is a GUI program for supporting various instruments from [DreamSourceLab](http://www.dreamsourcelab.com), including logic analyzers, oscilloscopes, etc. DSView is based on the [sigrok project](https://sigrok.org).
