@@ -6,8 +6,8 @@
 
 This is a copy of DSView, where I have modified the size of the real-time memory that the oscilloscope can use. This is very helpful for capturing high-frequency signals; you can freely choose from 2M to 64M. I also modified the lock of the sampling rate and the time base, which is also very helpful for the flexibility of sampling. There are still some issues, such as compatibility issues between some sampling rates and the size of the real-time memory. It is recommended to use 24M or 12M.
 
-<img width="1068" alt="image" src="https://github.com/cumtliang/DSView-Unlock/assets/14148856/5ed46584-dd28-4243-842c-55c876870582">
 
+<img width="1070" alt="image" src="https://github.com/cumtliang/DSView-Unlock/assets/14148856/cc1e3663-51f9-4a55-a0fb-b2e59a382291">
 
 
 
