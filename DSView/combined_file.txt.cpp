@@ -46488,6 +46488,7 @@ namespace dsv
             {
                 elements = (const uint64_t*)g_variant_get_fixed_array(
                     gvar_list, &num_elements, sizeof(uint64_t));
+                
                 _sample_rate.clear();
 
                 for (unsigned int i = 0; i < num_elements; i++)

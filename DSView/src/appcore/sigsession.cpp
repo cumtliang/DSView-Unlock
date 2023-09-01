@@ -388,7 +388,7 @@ namespace dsv {
 
         void SigSession::set_cur_snap_samplerate(uint64_t samplerate)
         {
-            //assert(samplerate != 0);
+            assert(samplerate != 0);
 
             _capture_data->_cur_snap_samplerate = samplerate;
             _capture_data->get_logic()->set_samplerate(samplerate);
