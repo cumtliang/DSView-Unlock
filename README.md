@@ -6,6 +6,9 @@
 
 This is a copy of DSView, where I have modified the size of the real-time memory that the oscilloscope can use. This is very helpful for capturing high-frequency signals; you can freely choose from 2M to 64M. I also modified the lock of the sampling rate and the time base, which is also very helpful for the flexibility of sampling. There are still some issues, such as compatibility issues between some sampling rates and the size of the real-time memory. It is recommended to use 24M or 12M.
 
+<img width="1165" alt="image" src="https://github.com/cumtliang/DSView-Unlock/assets/14148856/4dee9775-6a47-4564-bbb2-4b3dabea96e9">
+
+
 DSView is a GUI program for supporting various instruments from [DreamSourceLab](http://www.dreamsourcelab.com), including logic analyzers, oscilloscopes, etc. DSView is based on the [sigrok project](https://sigrok.org).
 
 The sigrok project aims at creating a portable, cross-platform, Free/Libre/Open-Source signal analysis software suite that supports various device types (such as logic analyzers, oscilloscopes, multimeters, and more).
