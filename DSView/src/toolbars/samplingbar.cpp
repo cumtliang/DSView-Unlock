@@ -82,6 +82,13 @@ namespace dsv
 
             _sample_limit_combobox.setCurrentIndex(5);
 
+            //_waveform_history_combobox.addItem("000000000000", 0);
+            //为下拉框添加从0到10000的值，并使每个数字都格式化为9位，前面用零填充。
+            for (int i = 0; i <= 10000; ++i) {
+                QString formattedNumber = QString("%1").arg(i, 9, 10, QChar('0'));
+                _waveform_history_combobox.addItem(formattedNumber, i);
+            }
+            _waveform_history_combobox.setCurrentIndex(0);
             ///////////////////////////////////////////////////////////////////////
 
 
@@ -133,6 +140,8 @@ namespace dsv
             ///////////////////////////////
             addWidget(new QLabel(" Realtime Memery: "));
             addWidget(&_sample_limit_combobox);
+            addWidget(new QLabel(" Waveforms: "));
+            addWidget(&_waveform_history_combobox);
             ///////////////////////////////
 
             _action_single = new QAction(this);
@@ -953,6 +962,7 @@ namespace dsv
                     {
 
                         _sample_limit_combobox.setEnabled(false);
+                        _waveform_history_combobox.setEnabled(false);
 
                         const uint64_t sample_count = ((uint64_t)ceil(sample_duration / SR_SEC(1) *
                             sample_rate) +
@@ -1042,7 +1052,9 @@ namespace dsv
             _is_run_as_instant = false;
 
             bool ret = _session->start_capture(false);
+
             _sample_limit_combobox.setEnabled(true);
+            _waveform_history_combobox.setEnabled(true);
 
             return ret;
         }
@@ -1367,6 +1379,7 @@ namespace dsv
                     _sample_count.setEnabled(true);
 
                     _sample_limit_combobox.setEnabled(false);
+                    _waveform_history_combobox.setEnabled(false);
                 }
             }
             else {

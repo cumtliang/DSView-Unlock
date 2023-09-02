@@ -27,6 +27,7 @@ project(DSView)
 #= Config Header
 #-------------------------------------------------------------------------------
 
+
 set(DS_TITLE DSView)
 set(DS_DESCRIPTION "A GUI for instruments of DreamSourceLab")
 
@@ -593,10 +594,18 @@ endif()
 #===============================================================================
 #= Release flags
 #-------------------------------------------------------------------------------
+set(CMAKE_CXX_FLAGS_RELWITHDEBINFO "-O1 -g")
+set(CMAKE_CONFIGURATION_TYPES "Debug;Release;RelWithDebInfo;MinSizeRel" CACHE STRING "" FORCE)
+
+
 set(CMAKE_CXX_FLAGS "-Wall -Wextra")
-set(CMAKE_BUILD_TYPE Release)
+#======set(CMAKE_BUILD_TYPE Debug)
+#======set(CMAKE_BUILD_TYPE Release)
+#======set(CMAKE_BUILD_TYPE RelWithDebInfo)
+
 set(CMAKE_CXX_FLAGS_DEBUG "-g")
 set(CMAKE_CXX_FLAGS_RELEASE "-O3")
+
 add_compile_options(-O3)
 
 #===============================================================================

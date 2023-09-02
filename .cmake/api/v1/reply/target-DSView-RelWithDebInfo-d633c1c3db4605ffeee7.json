@@ -43,31 +43,31 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 629,
+				"line" : 638,
 				"parent" : 0
 			},
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 659,
+				"line" : 668,
 				"parent" : 0
 			},
 			{
 				"command" : 2,
 				"file" : 0,
-				"line" : 105,
+				"line" : 106,
 				"parent" : 0
 			},
 			{
 				"command" : 3,
 				"file" : 0,
-				"line" : 639,
+				"line" : 648,
 				"parent" : 0
 			},
 			{
 				"command" : 6,
 				"file" : 0,
-				"line" : 200,
+				"line" : 201,
 				"parent" : 0
 			},
 			{
@@ -125,7 +125,7 @@
 			{
 				"command" : 6,
 				"file" : 0,
-				"line" : 194,
+				"line" : 195,
 				"parent" : 0
 			},
 			{
@@ -151,49 +151,49 @@
 			{
 				"command" : 9,
 				"file" : 0,
-				"line" : 600,
+				"line" : 609,
 				"parent" : 0
 			},
 			{
 				"command" : 10,
 				"file" : 0,
-				"line" : 205,
+				"line" : 206,
 				"parent" : 0
 			},
 			{
 				"command" : 11,
 				"file" : 0,
-				"line" : 85,
+				"line" : 86,
 				"parent" : 0
 			},
 			{
 				"command" : 11,
 				"file" : 0,
-				"line" : 104,
+				"line" : 105,
 				"parent" : 0
 			},
 			{
 				"command" : 11,
 				"file" : 0,
-				"line" : 117,
+				"line" : 118,
 				"parent" : 0
 			},
 			{
 				"command" : 11,
 				"file" : 0,
-				"line" : 159,
+				"line" : 160,
 				"parent" : 0
 			},
 			{
 				"command" : 11,
 				"file" : 0,
-				"line" : 579,
+				"line" : 580,
 				"parent" : 0
 			},
 			{
 				"command" : 11,
 				"file" : 0,
-				"line" : 145,
+				"line" : 146,
 				"parent" : 0
 			}
 		]
@@ -204,7 +204,7 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : " -std=c99 -O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk   -Wall -Wextra -Wno-return-type -Wno-ignored-qualifiers"
+					"fragment" : " -std=c99 -O2 -g -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk   -Wall -Wextra -Wno-return-type -Wno-ignored-qualifiers"
 				},
 				{
 					"backtrace" : 21,
@@ -388,7 +388,7 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : "-Wall -Wextra -O3 -std=gnu++17 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk   -Wall -Wextra -Wno-return-type -Wno-ignored-qualifiers"
+					"fragment" : "-Wall -Wextra -O1 -g -std=gnu++17 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk   -Wall -Wextra -Wno-return-type -Wno-ignored-qualifiers"
 				},
 				{
 					"backtrace" : 21,
@@ -762,7 +762,7 @@
 		"commandFragments" : 
 		[
 			{
-				"fragment" : "-Wall -Wextra -O3",
+				"fragment" : "-Wall -Wextra -O1 -g",
 				"role" : "flags"
 			},
 			{

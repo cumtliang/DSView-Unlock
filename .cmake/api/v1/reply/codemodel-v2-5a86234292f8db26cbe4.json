@@ -7,7 +7,7 @@
 				{
 					"build" : ".",
 					"hasInstallRule" : true,
-					"jsonFile" : "directory-.-Release-ec28fae8dd0eaa379113.json",
+					"jsonFile" : "directory-.-RelWithDebInfo-d3910f0ae50326cff4dc.json",
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.16"
@@ -20,7 +20,7 @@
 					]
 				}
 			],
-			"name" : "Release",
+			"name" : "RelWithDebInfo",
 			"projects" : 
 			[
 				{
@@ -40,7 +40,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "DSView::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-DSView-Release-931ffe6a3396b4e281b8.json",
+					"jsonFile" : "target-DSView-RelWithDebInfo-d633c1c3db4605ffeee7.json",
 					"name" : "DSView",
 					"projectIndex" : 0
 				}

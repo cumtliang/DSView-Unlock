@@ -154,6 +154,7 @@ namespace dsv {
             DsComboBox          _sample_rate;
 
             DsComboBox          _sample_limit_combobox;
+            DsComboBox          _waveform_history_combobox;
 
 
             QToolButton         _run_stop_button;

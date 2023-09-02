@@ -150,6 +150,18 @@
 			"value" : "/usr/local/Cellar/cmake/3.27.1/bin/cmake"
 		},
 		{
+			"name" : "CMAKE_CONFIGURATION_TYPES",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "STRING",
+			"value" : "Debug;Release;RelWithDebInfo;MinSizeRel"
+		},
+		{
 			"name" : "CMAKE_CPACK_COMMAND",
 			"properties" : 
 			[
