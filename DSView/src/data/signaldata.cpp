@@ -23,6 +23,7 @@
 #include <assert.h>
 
 #include "signaldata.h"
+#include <QTimer>
 
 namespace dsv {
 namespace data {
@@ -38,6 +39,15 @@ SignalData::~SignalData() {}
 void SignalData::set_samplerate(double samplerate)
 {
     assert(samplerate > 0);
+    /*
+    if(samplerate==0)
+    {
+
+        static bool dummyFlag; QTimer::singleShot(1000, [](){ dummyFlag = !dummyFlag; });
+
+        samplerate = 1000000000;
+    }
+    */
     _samplerate = samplerate;
 }
 

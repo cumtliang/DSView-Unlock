@@ -88,7 +88,7 @@ namespace dsv
                 QString formattedNumber = QString("%1").arg(i, 9, 10, QChar('0'));
                 _waveform_history_combobox.addItem(formattedNumber, i);
             }
-            _waveform_history_combobox.setCurrentIndex(0);
+            _waveform_history_combobox.setCurrentIndex(9000);
             ///////////////////////////////////////////////////////////////////////
 
 

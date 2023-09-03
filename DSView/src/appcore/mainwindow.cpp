@@ -44,6 +44,10 @@
 #include <QJsonValue>
 #include <QJsonArray>
 #include <functional>
+
+#include <QThread>
+
+
  /* __STDC_FORMAT_MACROS is required for PRIu64 and friends (in C++). */
 #include <inttypes.h>
 #include <stdint.h>
@@ -1279,10 +1283,17 @@ namespace dsv {
                     break;
 
                 case Qt::Key_Left:
+
+                    QThread::msleep(200);
+
+
                     _view->zoom(1);
                     break;
 
                 case Qt::Key_Right:
+
+                    QThread::msleep(200);
+
                     _view->zoom(-1);
                     break;
 

@@ -25,6 +25,9 @@
 #include <assert.h>
 #include <stdlib.h>
 #include <string.h>
+
+#include <QTimer>
+
  
 namespace dsv {
 namespace data {
@@ -115,6 +118,16 @@ void Snapshot::capture_ended()
 void Snapshot::set_samplerate(double samplerate)
 {
     assert(samplerate > 0);
+    /*
+    if(samplerate==0)
+    {
+
+        static bool dummyFlag; QTimer::singleShot(1000, [](){ dummyFlag = !dummyFlag; });
+
+        samplerate = 1000000000;
+    }
+    */
+
     _samplerate = samplerate;
 }
 

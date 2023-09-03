@@ -52,6 +52,8 @@
 #include "../ui/msgbox.h"
 #include "../ui/langresource.h"
 
+#include "../toolbars/samplingbar.h"
+
 using namespace dsv::config;
 
 namespace dsv {
@@ -388,7 +390,18 @@ namespace dsv {
 
         void SigSession::set_cur_snap_samplerate(uint64_t samplerate)
         {
+
             assert(samplerate != 0);
+            /*
+            if (samplerate == 0)
+            {
+                static bool dummyFlag; QTimer::singleShot(1000, []() { dummyFlag = !dummyFlag; });
+                samplerate = _sample_rate.itemData(
+                    _sample_rate.currentIndex())
+                    .value<uint64_t>();
+                //samplerate = _device_agent.get_sample_rate();
+            }
+            */
 
             _capture_data->_cur_snap_samplerate = samplerate;
             _capture_data->get_logic()->set_samplerate(samplerate);
