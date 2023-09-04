@@ -14,12 +14,11 @@ autom4te.cache
 CPackConfig.cmake
 CPackSourceConfig.cmake
 cmake_install.cmake
-Makefile
+
 *.cxx
-version.h
+
 config.guess
-config.h
-config.h.in
+
 config.log
 config.sub
 config.status
@@ -31,18 +30,11 @@ libtool
 stamp-h1
 .dirstamp
 autostuff
-Makefile.in
-configure
+
+
 aclocal.m4
 
-DSView/ui_*.h
-DSView/DSView
-DSView/install_manifest.txt
-DSView/qrc_DSView.cpp
-DSView/qrc_style.cpp
-DSView/qrc_breeze.cpp
-DSView/qrc_language.cpp
-DSView/config.h
+
 
 moc_*.cpp
 moc_*.cpp_parameters
