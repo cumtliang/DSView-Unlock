@@ -591,10 +591,20 @@ else()
 	include_directories(${PKGDEPS_INCLUDE_DIRS})
 endif()
 
+<<<<<<< Updated upstream
 #===============================================================================
 #= Release flags
 #-------------------------------------------------------------------------------
 set(CMAKE_CXX_FLAGS_RELWITHDEBINFO "-O1 -g")
+=======
+# ===============================================================================
+# = Release flags
+# -------------------------------------------------------------------------------
+# set(CMAKE_CXX_FLAGS_RELWITHDEBINFO "-O1 -g")
+set(CMAKE_CXX_FLAGS_MINSIZEREL "-O2 -ggdb3")
+
+set(CMAKE_CXX_FLAGS_MINSIZEREL "-Ofast") # 更高的优化级别
+>>>>>>> Stashed changes
 set(CMAKE_CONFIGURATION_TYPES "Debug;Release;RelWithDebInfo;MinSizeRel" CACHE STRING "" FORCE)
 
 
