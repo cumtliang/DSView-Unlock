@@ -1,7 +1,0 @@
-{
-    "files.associations": {
-        "libsigrok.h": "c",
-        "libsigrokdecode.h": "c",
-        "config.h": "c"
-    }
-}
